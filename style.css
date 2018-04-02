@@ -12,6 +12,13 @@ img {
   max-width: 100%;
 }
 
+/* wrappper */ 
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
 .top {
     display: grid;
     grid-gap: 20px;
@@ -42,6 +49,7 @@ img {
 .cta {
     background: var(--yellow);
     display: grid;
+    /* grid-gap: 20px; */
     align-items: center;
     justify-items: center;
     align-content: center;
@@ -113,4 +121,15 @@ img {
 
 .feature p {
     color: rgba(0, 0, 0, 0.5)
+}
+
+/* About section */
+
+.about {
+    background: white;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    align-items: center;
+    
 }
