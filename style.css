@@ -131,5 +131,36 @@ img {
     display: grid;
     grid-template-columns: 400px 1fr;
     align-items: center;
-    
+}
+
+/* gallery */
+
+.gallery {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery h2 {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.gallery h2:before, 
+.gallery h2:after {
+    display: block;
+    content: '';
+    background: linear-gradient(to var(--direction, left), var(--yellow), transparent);
+    height: 10px;
+}
+
+.gallery h2:after {
+    --direction: right;
 }
